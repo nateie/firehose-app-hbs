@@ -1,10 +1,16 @@
-<div class="smurfy span3">
+<div class="smurfy span5 offset4 text-center">
+
+	<h1 class="custom-h1">
+		Submit a favorite pic!
+	</h1>
+	<br/>
+
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title %>
-		<%= f.input :location %>
-		<%= f.input :message %>
+		<%= f.input :title, label: "What's this picture called?", placeholder: "Midnight in Paris" %>
+		<%= f.input :location, label: "Where was this?", placeholder: "France" %>
+		<%= f.input :message, label: "Thoughts?", placeholder: "What a night!" %>
 		<br/>
-		<%= f.submit "Save" %>
+		<%= f.submit "Add Pic", :class => 'btn btn-success btn-large' %>
 
 	<% end %>
 </div>
