@@ -20,7 +20,8 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">It's Me, Nate Ie!</a>
+	  <%= link_to "It's me, Nate Ie", root_path, :class => 'brand' %>	    
+
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
@@ -28,10 +29,10 @@
 
       	<ul class="nav">	
       		<li>    
-      			<%= link_to 'Random Pics', '/pics' %>	    
+      			<%= link_to 'My Pics', pics_path %>	    
       		</li>
       		<li>    
-      			<%= link_to 'Add Pic', '/pics/new' %>	    
+      			<%= link_to '+Pic', new_pic_path %>	    
       		</li>    
     	</ul>
       </div>
